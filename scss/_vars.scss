@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+$primary-color: (
+  "red": hsl(0, 78%, 62%),
+  "cyan": hsl(180, 62%, 55%),
+  "orange": hsl(34, 97%, 64%),
+  "blue": hsl(212, 86%, 64%),
+);
+
+$secondary-color: (
+  "verydarkblue": hsl(234, 12%, 34%),
+  "grayishblue": hsl(229, 6%, 66%),
+  "verylightgray": hsl(0, 0%, 98%),
+);
+
+$fontweight: (
+  "reg": 200,
+  "bold": 400,
+  "bolder": 600,
+);
+
+@mixin Small {
+  @media only screen and (max-width: 867px) {
+    @content;
+  }
+}
+
+@mixin XSmall {
+  @media only screen and (max-width: 290px) {
+    @content;
+  }
+}
